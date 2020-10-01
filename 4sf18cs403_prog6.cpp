@@ -1,3 +1,4 @@
+//Computer graphics project
 #include<GL/glut.h> 
 void displaySolid(void)
 {
@@ -101,7 +102,7 @@ void main(int argc, char *argv[])
 	glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB | GLUT_DEPTH);
 	glutInitWindowPosition(10, 10);
 	glutInitWindowSize(500, 500);
-	glutCreateWindow("Simple shaded scene consisting of a tea pot on a table");
+	glutCreateWindow("table with a tea pot");
 	glutDisplayFunc(displaySolid);
 
 	glEnable(GL_LIGHTING); glEnable(GL_LIGHT0); glShadeModel(GL_SMOOTH);
