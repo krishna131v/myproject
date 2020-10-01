@@ -21,10 +21,10 @@ void CohenSutherlandLineClipAndDraw(double x0, double y0, double x1, double y1)
 	outcode outcode0, outcode1, outcodeOut;
 	bool accept = false, done = false;
 	/*compute outcodes*/
-	outcode0 = ComputeOutCode(x0, y0);
+	outcoded2 = ComputeOutCode(x0, y0);
 	outcode1 = ComputeOutCode(x1, y1);
 	do {
-		if (!(outcode0 | outcode1)) /*logical or is 0 Trivially accept & exit*/
+		if (!(outcoded2 | outcode1)) /*logical or is 0 Trivially accept & exit*/
 		{
 			accept = true;
 			done = true;
@@ -150,6 +150,7 @@ void main(int argc, char** argv)
 	//int x1, x2, y1, y2;
 	//printf("Enter End points:");
 	//scanf("%d%d%d%d", &x1,&x2,&y1,&y2);
+	//The function start execution from here
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
 	glutInitWindowSize(500, 500);
