@@ -36,7 +36,16 @@ void displaySolid(void)
 	glPopMatrix();
 	
 
-
+************************************
+	int n, temp;
+Scanner s = new Scanner(System.
+System. out. print("Enter no. of elements you want in array:");
+n = s. nextInt();
+int a[] = new int[n];
+System. out. println("Enter all the elements:");
+for (int i = 0; i < n; i++)
+			***************************************
+			//These are extra lines i have added 
 	GLfloat mat_ambient1[] = { 1.0f,0.0f,0.0f,1.0f }; GLfloat mat_diffuse1[] = { 1.0f,1.0f,0.0f,1.0f }; GLfloat
 		mat_specular1[] = { 1.0f,1.0f,0.5f,1.0f }; GLfloat mat_shininess1[] = { 25.0f };
 	glMaterialfv(GL_FRONT_AND_BACK, GL_AMBIENT, mat_ambient1);
